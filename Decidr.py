@@ -28,7 +28,8 @@ def get_headers():
         "Content-Type": "application/json"
     }
 
-def query_ai(messages, model="accounts/fireworks/models/llama-v3p1-8b-instruct"):
+def query_ai(messages, model="Qwen/Qwen3-VL-8B-Instruct:novita"):
+    """accounts/fireworks/models/llama-v3p1-8b-instruct"""
     """Query the AI model with conversation history"""
     payload = {
         "messages": messages,
@@ -216,3 +217,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
