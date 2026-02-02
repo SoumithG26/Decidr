@@ -12,7 +12,7 @@ st.set_page_config(
 )
 
 # API Configuration
-API_URL = "https://router.huggingface.co/fireworks-ai/inference/v1/chat/completions"
+API_URL = "https://router.huggingface.co/v1/chat/completions"
 
 def get_headers():
     """Get headers for API requests"""
@@ -214,4 +214,5 @@ def main():
     )
 
 if __name__ == "__main__":
+
     main()
